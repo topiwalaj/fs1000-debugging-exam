@@ -14,24 +14,37 @@ body {
 .about-section .about-text {
   width: 45%;
   padding: 2rem;
-  border-left: 5px solid rgb(196, 255, 192);
+  border-left: 5px solid pink;
 }
 
 .about-section h1 {
-  color: rgb(192, 193, 255);
+  color: pink;
 }
 
 .about-section p {
   font-size: 20px;
+  font-weight: 400;
 }
 
 .about-section img {
   border-radius: 15px;
-  filter: drop-shadow(14px 14px rgb(181, 56, 2));
+  filter: drop-shadow(14px 14px pink);
 }
 
 /* About Section - Mobile Screen Sizes*/
-
+@media screen and (max-width: 950px) {
+  .about-section .about-text {
+    border-left: none;
+    width: 60%;
+  }
+  .about-section .wrapper {
+    flex-direction: column;
+  }
+  .about-section p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
 /* About Section - Desktop Screen Sizes*/
 @media screen and (min-width: 1280px) {
   .about-section .wrapper {
@@ -44,7 +57,7 @@ body {
 
 /* Footer Section - All Screen Sizes*/
 .footer {
-  background-color: rgb(166, 12, 37);
+  background-color: pink;
 }
 
 .footer .wrapper {
@@ -66,7 +79,15 @@ body {
 }
 
 /* Footer Section - Mobile Screen Sizes*/
-
+@media screen and (max-width: 650px){
+  .footer .wrapper {
+    flex-direction: column; 
+  }
+  .icons-section{
+    padding: 2rem;
+  }
+  
+}
 /* About Section - Desktop Screen Sizes*/
 @media screen and (min-width: 1280px) {
   .footer .wrapper {
